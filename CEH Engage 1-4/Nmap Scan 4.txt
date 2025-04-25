@@ -1,0 +1,41 @@
+# Nmap 7.94SVN scan initiated Mon Apr 14 09:18:26 2025 as: nmap -sV -oN output4.txt 192.168.0.0/24
+Nmap scan report for 192.168.0.1
+Host is up (0.00060s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  Unbound
+80/tcp open  http    nginx
+
+Nmap scan report for www.cehorg.com (192.168.0.222)
+Host is up (0.0013s latency).
+Not shown: 979 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2025-04-14 13:18:41Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: SKILL.CEH.com0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: SKILL.CEH)
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+1433/tcp open  ms-sql-s      Microsoft SQL Server
+1801/tcp open  msmq?
+2103/tcp open  msrpc         Microsoft Windows RPC
+2105/tcp open  msrpc         Microsoft Windows RPC
+2107/tcp open  msrpc         Microsoft Windows RPC
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: SKILL.CEH.com0., Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+3306/tcp open  mysql         MySQL (unauthorized)
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8080/tcp open  http          Apache httpd 2.4.59 ((Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1433-TCP:V=7.94SVN%I=7%D=4/14%Time=67FD0B36%P=x86_64-pc-linux-gnu%r
+SF:(ms-sql-s,25,"\x04\x01\0%\0\0\x01\0\0\0\x15\0\x06\x01\0\x1b\0\x01\x02\0
+SF:\x1c\0\x01\x03\0\x1d\0\0\xff\x10\0\x03\xe8\0\0\0\0");
+Service Info: Host: SKILL; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr 14 09:19:30 2025 -- 256 IP addresses (2 hosts up) scanned in 63.66 seconds
