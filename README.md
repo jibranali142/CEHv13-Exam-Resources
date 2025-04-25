@@ -1,2 +1,3 @@
 # CEHv13-Exam-Resources
-CEHv13-Exam-Resources
+
+All the required resources for CEH v13 Exam
